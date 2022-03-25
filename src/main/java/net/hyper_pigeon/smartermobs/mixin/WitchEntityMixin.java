@@ -70,7 +70,12 @@ public abstract class WitchEntityMixin extends MobEntity {
         Potion potion = Potions.HARMING;
 
         if(buffGoal.getTarget() != null) {
-            if(target instanceof ZombieEntity){
+
+            if(target.isOnFire()){
+                potion = Potions.FIRE_RESISTANCE;
+                this.setTarget(null);
+            }
+            else if(target instanceof ZombieEntity){
                 potion = target.hasStatusEffect(StatusEffects.STRENGTH) ? Potions.SWIFTNESS : Potions.STRENGTH;
                 this.setTarget(null);
             }
