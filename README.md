@@ -1,5 +1,5 @@
 # Smarter Mobs
-A mod that makes some mobs a little bit smarter.
+A mod that makes some mobs a little bit smarter and more challenging to fight. As of the latest release, it only modifies the behavior of witches. 
 
 # Table of Contents
 - [Witch](#Witch)
