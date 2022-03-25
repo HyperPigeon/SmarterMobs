@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "smartermobs",
+  "version": "${version}",
+  "name": "SmarterMobs",
+  "description": "A mod that makes certain mobs a little bit smarter. ",
+  "authors": [
+    "CyborgPigeon"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/smartermobs/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.hyper_pigeon.smartermobs.client.SmarterMobsClient"
+    ],
+    "main": [
+      "net.hyper_pigeon.smartermobs.SmarterMobs"
+    ]
+  },
+  "mixins": [
+    "smartermobs.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
